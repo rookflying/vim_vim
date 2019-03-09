@@ -45,3 +45,4 @@ if __name__ == '__main__':
         content = f.read()
     with open(vimrc, 'w') as f:
         f.write(content)
+    print('done!')
