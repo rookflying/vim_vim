@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-@author: DamJoker
+@author: rookflying
 @file: run.py
 @time: 2019/3/8 9:42 PM
 '''
