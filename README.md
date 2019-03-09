@@ -8,6 +8,7 @@ This is a script that automatically configures vim(~/.vimrc and ~/.vim). For now
 
 - catgs
 - python2.7
+- Linux/Mac
 
 ## Plugin 
 
@@ -44,4 +45,4 @@ If configuraion files(~/.vimrc,~/.vim) exist before running the script, the scri
 
 ## C++ coding
 
-Omnicppcomplete plugin (code autocomplete plugin) already works on STL source code. To make it also work on your own code, you need to run ctags_command which can be found in this repo at the root directory of your project.
+Omnicppcomplete plugin (code autocomplete plugin) already works on STL source code. To make it also work on your own code, you need to run ctags_command, which can be found in this repo, at the root directory of your project.
