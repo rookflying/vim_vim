@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a script that automatically configures vim(~/.vimrc and ~/.vim). For now, just support C++ coding. Don't need to configure your vim by yourself step by step. Just run the script. If you want more configuration, you can do it on your own on the basic of this, of course.
+This is a script that automatically configures vim(`~/.vimrc` and `~/.vim`). For now, just support C++ coding. Don't need to configure your vim by yourself step by step. Just run the script. If you want more configuration, you can do it on your own on the basic of this, of course.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ cd vim_vim
 
 > Make sure you have installed ctags and python2.7.
  
-Then configure your .vimrc path and .vim path in the config.json and run the script.
+Then configure your `.vimrc` path and `.vim` path in the `config.json` and run the script.
 
 ```
 python run.py
@@ -41,7 +41,7 @@ Then try your new vim.
 
 ## Note
 
-If configuraion files(~/.vimrc,~/.vim) exist before running the script, the script will rename them to ~/.vimrc_former and ~/.vim_former. So, don't worry about your old configuration. You can config vim on your own by downloading plugins to ~/.vim/bundle.
+If configuraion files(`~/.vimrc`,`~/.vim`) exist before running the script, the script will rename them to `~/.vimrc_former` and `~/.vim_former`. So, don't worry about your old configuration. You can config vim on your own by downloading plugins to `~/.vim/bundle`.
 
 ## C++ coding
 
