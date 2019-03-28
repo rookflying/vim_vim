@@ -41,6 +41,8 @@ if __name__ == '__main__':
         'cd ' + vim + '/tags/cpp_src/ && ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++')
     os.system('git clone https://github.com/ervandew/supertab.git ' + vim + '/bundle/supertab')
     os.system('git clone git://github.com/altercation/vim-colors-solarized.git ' + vim + '/bundle/vim-colors-solarized')
+    os.system('unzip ./resources/javacomplete.zip -d ' + vim + '/bundle/javacomplete')
+    os.system('git clone https://github.com/magic-dot-files/TagHighlight ' + vim + '/bundle/TagHighlight')
     with open('./.vimrc', 'r') as f:
         content = f.read()
     with open(vimrc, 'w') as f:

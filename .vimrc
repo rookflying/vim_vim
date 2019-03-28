@@ -17,9 +17,10 @@ filetype plugin indent on
 
 execute pathogen#infect()
 
-syntax enable
+set t_Co=256
 let g:solarized_termcolors=256
-set background=dark
+syntax enable
+set background=light
 colorscheme solarized
 
 map <C-n> :NERDTree<CR>
@@ -37,4 +38,12 @@ let OmniCpp_MayCompleteScope = 1
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
 set tags+=~/.vim/tags/cpp_src/tags
+
+setlocal omnifunc=javacomplete#Complete
+autocmd Filetype java set omnifunc=javacomplete#Complete 
+autocmd Filetype java set completefunc=javacomplete#CompleteParamsInf
+inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
+inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+autocmd Filetype java,javascript,jsp inoremap <buffer>  .  .<C-X><C-O><C-P>
+
 
