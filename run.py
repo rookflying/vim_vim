@@ -42,6 +42,7 @@ if __name__ == '__main__':
     os.system('git clone https://github.com/ervandew/supertab.git ' + vim + '/bundle/supertab')
     os.system('git clone git://github.com/altercation/vim-colors-solarized.git ' + vim + '/bundle/vim-colors-solarized')
     os.system('unzip ./resources/javacomplete.zip -d ' + vim + '/bundle/javacomplete')
+    os.system('unzip ./resources/TagHighlight.zip -d ' + vim + '/bundle/TagHighlight')
     os.system('git clone https://github.com/magic-dot-files/TagHighlight ' + vim + '/bundle/TagHighlight')
     with open('./.vimrc', 'r') as f:
         content = f.read()
