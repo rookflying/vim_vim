@@ -8,6 +8,7 @@ set mouse=a
 set laststatus=2
 set ruler
 set tabstop=4
+set expandtab
 set showmatch
 set ai
 set softtabstop=4
