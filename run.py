@@ -15,12 +15,15 @@ def readConf():
         vimrc = data['.vimrc']
         vim = data['.vim']
         javaHome = data['JAVA_HOME']
+        home = data['home']
     if vimrc[-1] == '/':
         vimrc = vimrc[0:-1]
     if vim[-1] == '/':
         vim = vim[0:-1]
     if javaHome[-1] == '/':
         javaHome = javaHome[0:-1]
+    if home[-1] == '/':
+        home = home[0:-1]
     if os.path.exists(vimrc):
         os.rename(vimrc, vimrc + '_former')
     if os.path.exists(vim):
@@ -30,11 +33,11 @@ def readConf():
     os.mkdir(vim + '/bundle')
     with open(vimrc, 'w') as f:
         pass
-    return (vimrc, vim, javaHome)
+    return (vimrc, vim, javaHome, home)
 
 
 if __name__ == '__main__':
-    vimrc, vim, javaHome = readConf()
+    vimrc, vim, javaHome, home = readConf()
     # vimrc = '/Users/admin/.vimrc'
     # vim = '/Users/admin/.vim'
     shutil.copyfile('./resources/pathogen.vim', vim + '/autoload/pathogen.vim')
@@ -53,7 +56,7 @@ if __name__ == '__main__':
     os.system('unzip ./resources/TagHighlight.zip -d ' + vim + '/bundle/TagHighlight')
     #os.system('git clone https://github.com/magic-dot-files/TagHighlight ' + vim + '/bundle/TagHighlight')
 
-    with open(vim + '/.bashrc', 'a') as f:
+    with open(home + '/.bashrc', 'a') as f:
         f.write('PATH=$PATH:' + javaHome + '/bin\n')
         f.write('CLASSPATH=.:' + javaHome + '/lib/tools.jar:' + javaHome + '/lib/dt.jar:' + vim + '/bundle/javacomplete/autoload\n')
         f.write('export PATH CLASSPATH\n')
