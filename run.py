@@ -53,7 +53,7 @@ if __name__ == '__main__':
     os.system('git clone https://github.com/altercation/vim-colors-solarized.git ' + vim + '/bundle/vim-colors-solarized')
     os.system('unzip ./resources/javacomplete.zip -d ' + vim + '/bundle/javacomplete')
     os.system('cd ' + vim + 'bundle/javacomplete/autoload && javac Reflection.java -Xlint')
-    os.system('unzip ./resources/TagHighlight.zip -d ' + vim + '/bundle/TagHighlight')
+    os.system('unzip ./resources/TagHighlight.zip -d ' + vim + '/bundle/')
     #os.system('git clone https://github.com/magic-dot-files/TagHighlight ' + vim + '/bundle/TagHighlight')
 
     with open(home + '/.bashrc', 'a') as f:
