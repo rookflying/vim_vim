@@ -36,7 +36,7 @@ cd vim_vim
 
 > Make sure you have installed ctags and python2.7 and java jre.
  
-Then configure your `.vimrc` path, `.vim` path, `JAVA_HOME` (`/usr/lib/jvm/java-1.8.0-openjdk-amd64`, etc) and `home` directory in the `config.json` and run the script.
+Then configure your `.vimrc` path, `.vim` path, `JAVA_HOME` (`/usr/lib/jvm/java-1.8.0-openjdk-amd64`, etc) and `home` directory in the `config.json` and run the script(netword is needed).
 
 ```
 python run.py
