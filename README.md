@@ -69,3 +69,7 @@ Some operations:
 ## Taglist
 
 `Ctrl+M` or `Enter` to show functions and classes. In this window, can jump to the function or class which is specified by thr cursor by pressing `Enter`.
+
+## LICENSE
+
+See the [LICENSE](https://github.com/rookflying/vim_vim/blob/master/LICENSE) file.
